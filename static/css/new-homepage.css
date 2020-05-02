@@ -1,0 +1,150 @@
+#modal-slogan {
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.slogan-header {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.slogan-bullets {
+	line-height: 25px;
+}
+
+.slogan-img {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	height: 150px;
+	z-index: -1;
+}
+
+#promo-banner {
+	border-radius: 10px;
+  	color: white;
+  	width: 100%;
+  	background-color: #257ab4;
+  	min-height: 40px;
+  	/*max-height: 76px;*/
+  	text-align: center;
+  	padding: 9px;
+  	position: relative;
+  	margin-bottom: 20px;
+}
+
+#close-icon {
+	right: 20px;
+	top: 10px;
+	position: absolute;
+}
+
+#close-icon:hover {
+	cursor: pointer;
+}
+
+#password-warning-length, #password-warning-match {
+	color: red;
+	display: none;
+}
+
+#loading {
+	margin: auto;
+	display: table-caption;
+}
+
+#grubbox-icon {
+	display: inline;
+	height: 35px;
+	vertical-align: middle;
+}
+
+#register-container {
+	right: 72px;
+	left: auto;
+	border-right: 1px solid #04924B;
+	margin-right: 20px
+}
+
+#signin-container {
+	right: 0px;
+	left: auto;
+}
+
+#register, #grubbox, #signin, #logout, #myaccount, #reorder-nav {
+	color: white;
+}
+
+#logout-container {
+	right: 124px;
+	left: auto;
+  border-right: 1px solid #04924B;
+	margin-right: 20px;
+}
+
+#myaccount-container {
+	right: 17px;
+}
+
+@media (max-width: 1000px){
+	#logout-container, #myaccount-container,
+	#register-container, #signin-container,
+}
+
+@media (min-width: 1000px){
+	#mobile-register, #mobile-signin, #mobile-logout, #mobile-myaccount {
+		display: none;
+	}
+}
+
+.grub20-modal {
+	position: fixed;
+	right: 2%;
+	bottom: 3%;
+	width: 400px;
+	border-radius: 10px;
+	z-index: 999;
+	display: none;
+}
+.grub20-img {
+	background-image: url('/static/img/grub20-img.png');
+	background-size: cover;
+	height: 200px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+.grub20-text-wrapper {
+	background-color: #8B4AAA;
+	color: white;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: 28px;
+	font-weight: 300;
+}
+.grub20-hero-phrase {
+	font-size: 1.29rem;
+	margin-bottom: 15px;
+}
+.grub20-description, .grub20-thanks {
+	font-size: 1rem;
+}
+.grub20-description {
+	margin-bottom: 22px;
+}
+.grub20-thanks {
+	cursor: pointer;
+	font-weight: normal;
+}
+.grub20-x {
+	margin-right: 7px;
+}
+@media(max-width: 700px) {
+	.grub20-modal {
+		display: none!important;
+	}
+}

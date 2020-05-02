@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.search-results__top {
+  background: #fff; }
+
+.search-results__term {
+  font-weight: bold;
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.02em; }
+  @media (min-width: 800px) {
+    .search-results__term {
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 0.005em;
+      padding: 45px 20px; } }
+
+.search-results__sort {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-align: center; }
+  .search-results__sort label,
+  .search-results__sort p,
+  .search-results__sort div {
+    display: inline-block; }
+  .search-results__sort div {
+    position: relative; }
+    a:hover .search-results__sort div,
+    a:focus .search-results__sort div,
+    button:hover .search-results__sort div,
+    button:focus .search-results__sort div,
+    .search-results__sort div:hover,
+    .search-results__sort div:focus {
+      outline: none; }
+      /*a:hover .search-results__sort div p,
+      a:focus .search-results__sort div p,
+      button:hover .search-results__sort div p,
+      button:focus .search-results__sort div p,
+      .search-results__sort div:hover p,
+      .search-results__sort div:focus p {
+        text-decoration: underline; }*/
+  .search-results__sort p {
+    color: #287EBB;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 11px;
+    border: 1px solid #287EBB;
+    margin-top: 13px;
+    margin-left: 9px; }
+    .search-results__sort p:after {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-family: Fontawesome;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      speak: none;
+      text-transform: none;
+      text-indent: 0;
+      content: "";
+      color: white;
+      background-color: #287EBB;
+      display: inline-block;
+      font-size: 10px;
+      margin-left: 8px;
+      position: relative;
+      text-align: center;
+      top: -2px;
+      right: -1px;
+      width: 29px;
+      height: 35px;
+      line-height: 36px;}
+  .search-results__sort select {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-appearance: menulist-button; }
